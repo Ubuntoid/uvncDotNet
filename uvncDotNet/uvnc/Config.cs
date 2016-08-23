@@ -1,6 +1,6 @@
 ﻿using System;
 using System.IO;
-using Saltwort.ConfigFile;
+using uvncDotNet.Helper;
 
 namespace uvncDotNet.uvnc
 {
