@@ -340,6 +340,7 @@ namespace uvncDotNet.uvnc
         /// <summary>
         /// Run-time logging of all internal debug messages is now supported. Log data may be output to a 
         /// file or a console window or the MSVC debugger if the program was compiled with debugging active.)
+        /// 1:debug 2:file (WinVNC.log) 4:console 
         /// </summary>
         public string DebugMode
         {
