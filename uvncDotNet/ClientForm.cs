@@ -6,12 +6,7 @@ namespace uvncDotNet
 {
     public partial class ClientForm : Form
     {
-        public override sealed string Text
-        {
-            get { return base.Text; }
-            set { base.Text = value; }
-        }
-
+ 
         public ClientForm()
         {
             InitializeComponent();
@@ -21,7 +16,7 @@ namespace uvncDotNet
         {
             InitializeComponent();
 
-            Text = uvncClient.Host;
+            base.Text = uvncClient.Host;
 
             remoteDesktop1.VncProxyID = uvncClient.ProxyID;
             remoteDesktop1.VncPort = uvncClient.Port;

@@ -1,6 +1,6 @@
 ﻿using System;
 using System.IO;
-using uvncDotNet.Helper;
+using uvncDotNet.Helpers;
 
 namespace uvncDotNet.Uvnc
 {

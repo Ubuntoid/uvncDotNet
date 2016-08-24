@@ -2,7 +2,7 @@
 using System.Runtime.InteropServices;
 using System.Text;
 
-namespace uvncDotNet.Helper
+namespace uvncDotNet.Helpers
 {
     public class IniFile
     {
