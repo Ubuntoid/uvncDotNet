@@ -878,7 +878,7 @@ namespace uvncDotNet.Controls
         private bool ShouldSerializeBackColor()
         {
             // Don't serialize default value.
-            if (this.BackColor == FlatMenu.defaultBackColor)
+            if (this.BackColor == defaultBackColor)
                 return false;
 
             return true;
@@ -892,7 +892,7 @@ namespace uvncDotNet.Controls
         private bool ShouldSerializeHoverBackColor()
         {
             // Don't serialize default value.
-            if (this.HoverBackColor == FlatMenu.defaultHoverBackColor)
+            if (this.HoverBackColor == defaultHoverBackColor)
                 return false;
 
             return true;
@@ -905,7 +905,7 @@ namespace uvncDotNet.Controls
         /// </summary>
         public override void ResetBackColor()
         {
-            this.BackColor = FlatMenu.defaultBackColor;
+            this.BackColor = defaultBackColor;
         }
 
         /// <summary>
@@ -913,7 +913,7 @@ namespace uvncDotNet.Controls
         /// </summary>
         private void ResetHoverBackColor()
         {
-            this.HoverBackColor = FlatMenu.defaultHoverBackColor;
+            this.HoverBackColor = defaultHoverBackColor;
         }
         #endregion Reset property methods
 
@@ -924,14 +924,14 @@ namespace uvncDotNet.Controls
         protected FlatMenu()
         {
             // Initialize private fields.
-            this.menuId = FlatMenu.nextMenuId++;
+            this.menuId = nextMenuId++;
 
-            this.backColor = FlatMenu.defaultBackColor;
+            this.backColor = defaultBackColor;
             this.borderColor = Color.Black;
             this.separatorColor = Color.Black;
             this.textColor = Color.Black;
 
-            this.hoverBackColor = FlatMenu.defaultHoverBackColor;
+            this.hoverBackColor = defaultHoverBackColor;
             this.hoverBorderColor = this.TextColor;
             this.hoverTextColor = this.TextColor;
 

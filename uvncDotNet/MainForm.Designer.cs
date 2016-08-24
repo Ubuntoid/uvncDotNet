@@ -1,4 +1,6 @@
-﻿namespace uvncDotNet
+﻿using uvncDotNet.Controls;
+
+namespace uvncDotNet
 {
     partial class MainForm
     {
@@ -28,13 +30,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            uvncDotNet.Controls.FlatMenuItemList flatMenuItemList1 = new uvncDotNet.Controls.FlatMenuItemList();
+            FlatMenuItemList flatMenuItemList1 = new FlatMenuItemList();
             this.partnerIDTextBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.connectToPartnerButton = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.flatMenuBar1 = new uvncDotNet.Controls.FlatMenuBar();
+            this.flatMenuBar1 = new FlatMenuBar();
             this.SuspendLayout();
             // 
             // partnerIDTextBox
@@ -148,7 +150,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button connectToPartnerButton;
         private System.Windows.Forms.Label label3;
-        private Controls.FlatMenuBar flatMenuBar1;
+        private FlatMenuBar flatMenuBar1;
     }
 }
 
