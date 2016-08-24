@@ -30,13 +30,13 @@ namespace uvncDotNet
         /// </summary>
         private void InitializeComponent()
         {
-            FlatMenuItemList flatMenuItemList1 = new FlatMenuItemList();
+            uvncDotNet.Controls.FlatMenuItemList flatMenuItemList1 = new uvncDotNet.Controls.FlatMenuItemList();
             this.partnerIDTextBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.connectToPartnerButton = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.flatMenuBar1 = new FlatMenuBar();
+            this.flatMenuBar1 = new uvncDotNet.Controls.FlatMenuBar();
             this.SuspendLayout();
             // 
             // partnerIDTextBox
@@ -138,7 +138,7 @@ namespace uvncDotNet
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MaximizeBox = false;
             this.Name = "MainForm";
-            this.Text = "MainForm";
+            this.Text = "uvnc.net";
             this.ResumeLayout(false);
             this.PerformLayout();
 
