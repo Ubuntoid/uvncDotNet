@@ -99,6 +99,7 @@
     <None Include="Resources\background.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\rc.png" />
     <Content Include="VncSharp.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

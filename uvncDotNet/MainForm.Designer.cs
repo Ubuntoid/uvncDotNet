@@ -30,13 +30,13 @@ namespace uvncDotNet
         /// </summary>
         private void InitializeComponent()
         {
-            FlatMenuItemList flatMenuItemList1 = new FlatMenuItemList();
+            uvncDotNet.Controls.FlatMenuItemList flatMenuItemList1 = new uvncDotNet.Controls.FlatMenuItemList();
             this.partnerIDTextBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.connectToPartnerButton = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.flatMenuBar1 = new FlatMenuBar();
+            this.flatMenuBar1 = new uvncDotNet.Controls.FlatMenuBar();
             this.SuspendLayout();
             // 
             // partnerIDTextBox
@@ -84,15 +84,17 @@ namespace uvncDotNet
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(71)))), ((int)(((byte)(38)))));
             this.label3.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Image = global::uvncDotNet.Properties.Resources.rc;
+            this.label3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.label3.Location = new System.Drawing.Point(12, 40);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(159, 30);
+            this.label3.Size = new System.Drawing.Size(211, 30);
             this.label3.TabIndex = 2;
             this.label3.Text = "Remote Control";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // flatMenuBar1
             // 
@@ -138,7 +140,7 @@ namespace uvncDotNet
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MaximizeBox = false;
             this.Name = "MainForm";
-            this.Text = "MainForm";
+            this.Text = "uvnc.net";
             this.ResumeLayout(false);
             this.PerformLayout();
 
