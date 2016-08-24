@@ -2,7 +2,7 @@
 using System.Security.Cryptography;
 using System.Text;
 
-namespace uvncDotNet.uvnc
+namespace uvncDotNet.Uvnc
 {
     public class Password
     {

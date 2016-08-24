@@ -2,7 +2,7 @@
 using System.IO;
 using uvncDotNet.Helper;
 
-namespace uvncDotNet.uvnc
+namespace uvncDotNet.Uvnc
 {
     public class Config
     {

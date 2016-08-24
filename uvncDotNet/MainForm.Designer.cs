@@ -28,72 +28,77 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.connectToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.remoteDesktop1 = new VncSharp.RemoteDesktop();
-            this.menuStrip1.SuspendLayout();
+            this.partnerIDTextBox = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.connectToPartnerButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // menuStrip1
+            // partnerIDTextBox
             // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.fileToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(749, 24);
-            this.menuStrip1.TabIndex = 0;
-            this.menuStrip1.Text = "menuStrip1";
+            this.partnerIDTextBox.Location = new System.Drawing.Point(234, 214);
+            this.partnerIDTextBox.Name = "partnerIDTextBox";
+            this.partnerIDTextBox.Size = new System.Drawing.Size(250, 21);
+            this.partnerIDTextBox.TabIndex = 1;
             // 
-            // fileToolStripMenuItem
+            // label1
             // 
-            this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.connectToolStripMenuItem});
-            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
-            this.fileToolStripMenuItem.Text = "File";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Location = new System.Drawing.Point(232, 195);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(66, 16);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Partner ID";
             // 
-            // connectToolStripMenuItem
+            // label2
             // 
-            this.connectToolStripMenuItem.Name = "connectToolStripMenuItem";
-            this.connectToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
-            this.connectToolStripMenuItem.Text = "Connect";
-            this.connectToolStripMenuItem.Click += new System.EventHandler(this.connectToolStripMenuItem_Click);
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label2.Location = new System.Drawing.Point(230, 151);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(157, 25);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Control Remote";
             // 
-            // remoteDesktop1
+            // connectToPartnerButton
             // 
-            this.remoteDesktop1.AutoScroll = true;
-            this.remoteDesktop1.AutoScrollMinSize = new System.Drawing.Size(608, 427);
-            this.remoteDesktop1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.remoteDesktop1.Location = new System.Drawing.Point(0, 24);
-            this.remoteDesktop1.Name = "remoteDesktop1";
-            this.remoteDesktop1.Size = new System.Drawing.Size(749, 361);
-            this.remoteDesktop1.TabIndex = 1;
+            this.connectToPartnerButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(71)))), ((int)(((byte)(38)))));
+            this.connectToPartnerButton.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.connectToPartnerButton.ForeColor = System.Drawing.Color.White;
+            this.connectToPartnerButton.Location = new System.Drawing.Point(234, 252);
+            this.connectToPartnerButton.Name = "connectToPartnerButton";
+            this.connectToPartnerButton.Size = new System.Drawing.Size(150, 30);
+            this.connectToPartnerButton.TabIndex = 3;
+            this.connectToPartnerButton.Text = "Connect to partner";
+            this.connectToPartnerButton.UseVisualStyleBackColor = false;
+            this.connectToPartnerButton.Click += new System.EventHandler(this.connectToPartnerButton_Click);
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(749, 385);
-            this.Controls.Add(this.remoteDesktop1);
-            this.Controls.Add(this.menuStrip1);
+            this.BackColor = System.Drawing.Color.White;
+            this.BackgroundImage = global::uvncDotNet.Properties.Resources.background;
+            this.ClientSize = new System.Drawing.Size(552, 353);
+            this.Controls.Add(this.connectToPartnerButton);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.partnerIDTextBox);
             this.DoubleBuffered = true;
-            this.MainMenuStrip = this.menuStrip1;
+            this.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Name = "MainForm";
-            this.Text = "Form1";
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
+            this.Text = "MainForm";
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem connectToolStripMenuItem;
-        private VncSharp.RemoteDesktop remoteDesktop1;
+        private System.Windows.Forms.TextBox partnerIDTextBox;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button connectToPartnerButton;
     }
 }
 
