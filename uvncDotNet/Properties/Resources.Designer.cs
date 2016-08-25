@@ -71,12 +71,12 @@ namespace uvncDotNet.Properties {
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        ///   Поиск локализованного ресурса типа System.Drawing.Icon, аналогичного (Значок).
         /// </summary>
-        internal static System.Drawing.Bitmap rc {
+        internal static System.Drawing.Icon Error_16 {
             get {
-                object obj = ResourceManager.GetObject("rc", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
+                object obj = ResourceManager.GetObject("Error_16", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
             }
         }
     }
